@@ -6,8 +6,8 @@
 
 body{
     font-family:Arial, sans-serif;
+    background:#f7f5f2;
     color:#222;
-    background:linear-gradient(to bottom, #fdf6f0, #e8d7c8);
 }
 
 a{
@@ -124,40 +124,85 @@ header{
     object-fit: cover;
 }
 
-.tabs{
-    display:grid;
-    grid-template-columns:repeat(6,1fr);
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
+.bestsellers {
+    padding: 60px 40px;
+    background: #ffffff;
 }
 
-.tabs a{
-    text-align:center;
-    padding:12px;
-    border-right:1px solid #ddd;
-    font-size:13px;
+.bestsellers h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: #3B2A1E;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+    cursor: default;
+    transition: 0.3s;
 }
 
-.products{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
+.bestsellers h2:hover{
+    letter-spacing:4px;
+    text-shadow: 0 0 1px #222;
 }
 
-.product{
-    border-right:1px solid #ddd;
-    border-bottom:1px solid #ddd;
-    padding:25px;
-    text-align:center;
+.bestitems {
+    text-align: center;
+    font-size: 0;
+}
+ 
+.bestitem {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 22%;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background: #ffffff;
+    border-radius: 28px;
+    padding-top: 28px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    text-align: center;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    border: 2px solid rgba(0,0,0,0.04);
+    transition:0.3s;
 }
 
-.product h4{
-    margin-top:15px;
-    margin-bottom:5px;
-    font-size:13px;
+.bestitem:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
 }
 
-.product p{
-    font-size:12px;
+.drinkimg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 50px;
+    transition:0.4s;
+}
+
+.drinkimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.bestitem:hover .drinkimg{
+    transform:scale(1.05);
+}
+
+.bestitem h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3B2A1E;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+    cursor: default;
 }
 
 .feature-grid{
@@ -169,7 +214,7 @@ header{
     border-right:1px solid #ddd;
 }
 
-.huge{
+.feature-image img{
     height:550px;
 }
 
@@ -215,8 +260,10 @@ header{
     font-weight:400;
 }
 
-.cta-image .bag{
-    height:450px;
+.cta-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
 .btn {
