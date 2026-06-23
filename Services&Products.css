@@ -279,7 +279,7 @@ header {
 .services p:hover{
     background:#3B2A1E;
     color:white;
-    cursor: pointer;
+    cursor: default;
 }
 
 /* footer */
