@@ -115,6 +115,12 @@ header {
     justify-content: center;
 }
 
+.about-text .btn{
+    width: 40%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
 .about-text span {
     font-size: 14px;
     letter-spacing: 3px;
