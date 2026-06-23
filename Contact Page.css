@@ -93,7 +93,7 @@ header {
 }
 
 .btn:hover {
-    background: #222;
+    background: #3B2A1E;
     color: white;
     transform: translateY(-3px);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
@@ -198,15 +198,30 @@ header {
     cursor: default;
 }
 
-.footer-column a{
-    text-decoration:none;
-    color:#222;
-    font-size:13px;
+.footer-column a {
+    position: relative;
     transition: 0.3s;
+    text-decoration: none;
+    color: #222;
 }
 
-.footer-column a:hover{
-    color:#8b5e3c;
+.footer-column a:hover {
+    color: #8B5E3C;
+}
+
+.footer-column a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #8B5E3C;
+    transition: 0.5s;
+}
+
+.footer-column a:hover::after {
+    width: 30%;
 }
 
 .footer-column p{
